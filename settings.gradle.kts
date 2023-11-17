@@ -1,8 +1,11 @@
+@file:Suppress("UnstableApiUsage")
+
 pluginManagement {
     repositories {
         google()
         mavenCentral()
         gradlePluginPortal()
+        maven(url = "https://plugins.gradle.org/m2/")
     }
 }
 dependencyResolutionManagement {
@@ -10,8 +13,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven(url = "https://plugins.gradle.org/m2/")
     }
 }
 
 rootProject.name = "MyApplication"
 include(":app")
+include(":mylibrary")
